@@ -1,6 +1,5 @@
 import sys
 import json
-import doctest
 
 class Adventure():
     def __init__(self, mapPath):
@@ -17,10 +16,10 @@ class Adventure():
             sys.stdout.write("Sorry, you need to 'go' somewhere.\n")
         elif direction in self.map[self.current_room]['exits'].keys():
             self.current_room = self.map[self.current_room]['exits'][direction]
-            sys.stdout.write("You go " + direction + ".\n\n")
+            sys.stdout.write(f"You go {direction}.\n\n")
             self.look()
         else:
-            sys.stdout.write(f"There's no way to go " + direction + ".\n")
+            sys.stdout.write(f"There's no way to go {direction}.\n")
 
     def look(self):
         if self.has_items():
@@ -66,15 +65,15 @@ class Adventure():
                 commands += '  ' + verb + '...\n'
             else:
                 commands += '  ' + verb + '\n'
-        sys.stdout.write("You can run the following commands:\n" + commands)
+        sys.stdout.write(f"You can run the following commands:\n{commands}")
     
 
     def run(self):
         self.look()
         while(True):
             # winning and losing conditions
-            if self.current_room == 4: # win
-                if 'sword' in self.inventory and 'shield' in self.inventory:
+            if self.map[self.current_room].name == "A dark room": 
+                if 'sword' in self.inventory and 'shield' in self.inventory: # win
                     sys.stdout.write("You encountered a dragon and defeated it with your sword and shield! You won! Congratulations!🎇\n")
                     break
                 else: # lose
