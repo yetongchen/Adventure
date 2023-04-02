@@ -92,7 +92,7 @@ You're not carring anything.
 What would you like to do?
 ```
 ### Winning and losing conditions
-There is a sword and a shield in the rooms as well as a 'boss room' in the map. If you enter the boss room without both the sword and shield, you lose, and the game continues. You can try again to get the weapons. If you enter it with both, you win, and the game ends. 
+The rooms contain a sword and a shield, and there is a "boss room" on the map. If you enter the boss room without both the sword and shield, you lose, but the game continues. You can try again to obtain the weapons. If you enter with both, you win, and the game ends.
 ```
 > A white room
 
