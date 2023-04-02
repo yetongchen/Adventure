@@ -88,7 +88,7 @@ Items: shield
 Exits: east south
 
 What would you like to do? inventory
-You're not carring anything.
+You're not carrying anything.
 What would you like to do?
 ```
 ### Winning and losing conditions

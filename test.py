@@ -47,7 +47,7 @@
     You drop the shield.
     What would you like to do?
     >>> inventory
-    You're not carring anything.
+    You're not carrying anything.
     What would you like to do?
     >>> look
     > A blue room

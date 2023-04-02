@@ -56,7 +56,7 @@ class Adventure():
             items = '\n  '.join(self.inventory)
             sys.stdout.write(f"Inventory:\n  {items}\n")
         else:
-            sys.stdout.write("You're not carring anything.\n")
+            sys.stdout.write("You're not carrying anything.\n")
 
     def help(self):
         commands = ""
