@@ -72,7 +72,7 @@ class Adventure():
         self.look()
         while(True):
             # winning and losing conditions
-            if self.map[self.current_room].name == "A dark room": 
+            if self.map[self.current_room]['name'] == "A dark room": 
                 if 'sword' in self.inventory and 'shield' in self.inventory: # win
                     sys.stdout.write("You encountered a dragon and defeated it with your sword and shield! You won! Congratulations!🎇\n")
                     break
