@@ -85,7 +85,7 @@ class Adventure():
                 action_input = input("What would you like to do? ")
                 action = action_input.strip().lower().split()
             except EOFError:
-                sys.stdout.write("\nUse 'quit' to exit.\n")
+                sys.stdout.write("Use 'quit' to exit.\n")
                 continue
             if len(action) == 2:
                 verb = action[0]

@@ -1,10 +1,10 @@
 # CS515_project1_Adventure
-Yetong Chen ychen12@stevens.edu
+ Yetong Chen ychen12@stevens.edu
 
-A text-based video game: players use text commands to explore a textual world.
+ A text-based video game: players use text commands to explore a textual world.
 
 ## Github repo
-
+https://github.com/yetongchen/CS515_project1_Adventure
 
 ## time
 I spent about 7 hours on the project.
