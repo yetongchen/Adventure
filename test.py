@@ -96,9 +96,9 @@
     >>> go east
     You go east.
 
-    > A dark room
+    > A boss room
 
-    The room is dark, and there seems to be something very big sleeping deep down.
+    The room is boss, and there seems to be something very big sleeping deep down.
     
     Exits: west
     You encountered a dragon but were defeated due to a lack of weapons. You lose. Try again!
@@ -171,9 +171,9 @@
     >>> go east
     You go east.
 
-    > A dark room
+    > A boss room
 
-    The room is dark, and there seems to be something very big sleeping deep down.
+    The room is boss, and there seems to be something very big sleeping deep down.
     
     Exits: west
     You encountered a dragon and defeated it with your sword and shield! You won! Congratulations!🎇

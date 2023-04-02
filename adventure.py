@@ -6,7 +6,7 @@ class Adventure():
         self.map = json.load(open(mapPath))
         self.current_room = 0
         self.inventory = []
-        self.verbs = {'go': 1, 'look': 0, 'get': 1, 'drop': 1, 'inventory': 0, 'help': 0, 'quit': 0}
+        self.verbs = {'go': 1, 'get': 1, 'drop': 1, 'look': 0, 'inventory': 0, 'quit': 0, 'help': 0}
 
     def has_items(self):
         return self.map[self.current_room].get('items') != None and len(self.map[self.current_room].get('items')) > 0
@@ -53,8 +53,8 @@ class Adventure():
 
     def show_inventory(self):
         if len(self.inventory) > 0:
-            inventory = '\n  '.join(self.inventory)
-            sys.stdout.write(f"Inventory:\n  {inventory}\n")
+            items = '\n  '.join(self.inventory)
+            sys.stdout.write(f"Inventory:\n  {items}\n")
         else:
             sys.stdout.write("You're not carring anything.\n")
 
@@ -72,7 +72,7 @@ class Adventure():
         self.look()
         while(True):
             # winning and losing conditions
-            if self.map[self.current_room]['name'] == "A dark room": 
+            if self.map[self.current_room]['name'] == "A boss room": 
                 if 'sword' in self.inventory and 'shield' in self.inventory: # win
                     sys.stdout.write("You encountered a dragon and defeated it with your sword and shield! You won! Congratulations!🎇\n")
                     break

@@ -22,8 +22,8 @@
   "items": ["rose"]
  }
  ,
- {"name": "A dark room",
-  "desc": "The room is dark, and there seems to be something very big sleeping deep down.",
+ {"name": "A boss room",
+  "desc": "The room is boss, and there seems to be something very big sleeping deep down.",
   "exits": { "west": 3 }
  }
 ]

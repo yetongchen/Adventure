@@ -12,9 +12,11 @@ I spent about 7 hours on the project.
 ## test 
 I tested my code through running the testing commands saved in the test.py file.
 
-## bugs or issues  not resolve
+## bugs or issues
+When setting the win condition, I used the index to refer to a specific room. However, if the map is changed, this win condition might still trigger, causing an error.
 
 ## resolved issue
+To prevent triggering the winning or losing condition on other maps, I referred to the special room by its specific name throughout the text.
 
 ## 3 extensions
 ### A `help` verb
@@ -90,7 +92,7 @@ You're not carring anything.
 What would you like to do?
 ```
 ### Winning and losing conditions
-There is a sword and a shield in the rooms as well as a 'dark room' in the map. If you enter the dark room without both the sword and shield, you lose, and the game continues. You can try again to get the weapons. If you enter it with both, you win, and the game ends. 
+There is a sword and a shield in the rooms as well as a 'boss room' in the map. If you enter the boss room without both the sword and shield, you lose, and the game continues. You can try again to get the weapons. If you enter it with both, you win, and the game ends. 
 ```
 > A white room
 
@@ -114,9 +116,9 @@ Exits: north west east
 What would you like to do? go east
 You go east.
 
-> A dark room
+> A boss room
 
-The room is dark, and there seems to be something very big sleeping deep down.
+The room is boss, and there seems to be something very big sleeping deep down.
 
 Exits: west
 
@@ -181,9 +183,9 @@ Exits: north west east
 What would you like to do? go east
 You go east.
 
-> A dark room
+> A boss room
 
-The room is dark, and there seems to be something very big sleeping deep down.
+The room is boss, and there seems to be something very big sleeping deep down.
 
 Exits: west
 
